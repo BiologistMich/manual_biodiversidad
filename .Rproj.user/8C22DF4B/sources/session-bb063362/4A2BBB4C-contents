@@ -1,0 +1,7 @@
+system("git config --global user.name")
+system("git config --global user.email")
+
+system('git config --global user.name "BiologistMich"')
+system('git config --global user.email "ivann.romero@outlook.com"')
+system("git config --global user.name")
+system("git config --global user.email")
