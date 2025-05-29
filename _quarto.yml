@@ -2,8 +2,8 @@ project:
   type: book
 
 book:
-  title: "manual_biodiversidad"
-  author: "Norah Jones"
+  title: "Manual para análisis de biosiversidad"
+  author: "Biol. Michell Ivann Romero Pacheco"
   date: "29/5/2025"
   chapters:
     - index.qmd
