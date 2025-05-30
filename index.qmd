@@ -1,9 +1,4 @@
-# Preface {.unnumbered}
 
-This is a Quarto book.
+# Prefacio {.unnumbered}
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
-
-```{r}
-1 + 1
-```
+Este libro introduce a distintos procedimientos para el análisis de biodiversidad mediante el uso de programación en R y RStudio, con un enfoque particular en comunidades de aves. Cada capítulo es un procedimiento específico que se desarrolla como guía con sus respectivos códigos y resultados.
