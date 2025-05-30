@@ -1,22 +1,22 @@
 [
   {
-    "objectID": "Analisis_de_diversidad_iNext.html",
-    "href": "Analisis_de_diversidad_iNext.html",
-    "title": "1  Analisis de diversidad iNext",
-    "section": "",
-    "text": "Introducción\nEl análisis de diversidad estructural de las comunidades durante mucho tiempo se ha implementado generalmente mediante el uso de índices tradicionales cuantitativos como el índice de diversidad de Shannon, dominancia de Simpson y equidad de Pielou.\nEstos índices, resultan en un valor numérico cuya unidad de medida son los “bits” p. ej. en H’\nsystem(“quarto render –no-cache –verbose”)",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Analisis de diversidad iNext</span>"
-    ]
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Manual de procedimientos para el análisis de biodiversidad",
+    "title": "Prefacio",
     "section": "",
     "text": "Prefacio\nEste libro introduce a distintos procedimientos para el análisis de biodiversidad mediante el uso de programación en R y RStudio, con un enfoque particular en comunidades de aves. Cada capítulo es un procedimiento específico que se desarrolla como guía con sus respectivos códigos y resultados.",
     "crumbs": [
-      "Prefacio"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Prefacio</span>"
+    ]
+  },
+  {
+    "objectID": "Analisis_de_diversidad_iNext.html",
+    "href": "Analisis_de_diversidad_iNext.html",
+    "title": "\n1  Analisis de diversidad Verdadera con iNext\n",
+    "section": "",
+    "text": "Introducción\nEl análisis de diversidad estructural de las comunidades durante mucho tiempo se ha implementado generalmente mediante el uso de índices tradicionales cuantitativos como el índice de diversidad de Shannon, dominancia de Simpson y equidad de Pielou.\nEstos índices, miden sólo un componente de la diversidad, y resultan en un valor numérico cuya unidad de medida son los “bits” p. ej. en H’, el cual carece de interpretación ecológica, es abstracta y dificil de comparar pues sólo es un valor de referencia.\nEn contraste, el análisis de diversidad verdadera mediante los números de HIll (Hill, 1973) es el método más reciente y aceptado para medir la diversidad. Ya que su unidad de medida es el número efectivo de especies y que es considerada cuando cada especie es ponderada por su abundancia relativa por lo que es recomendado como una medida que conserva propiedades más intuitivas y permite una interpretación más unificada de la diversidad de especies (Cultid-Medina y Escobar, 2019).\nEjemplo de análisis de diversidad con índices tradicionales\nEl análisis de diversidad como mencionábamos, se realiza de convencinalmente con ciertos índices tradicionales. Para esto, se puede utilizar el paquete vegan en R. Para esto es necesario tener una base de datos con sitios o muestras en filas y las especies en columnas, con sus respectivas abundancias.\n\n\n\n\n\n\nquarto_render()",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Analisis de diversidad Verdadera con iNext</span>"
     ]
   }
 ]
