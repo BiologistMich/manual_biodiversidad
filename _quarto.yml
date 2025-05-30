@@ -17,8 +17,11 @@ format:
     theme:
       - cosmo
       - brand
-  pdf:
-    documentclass: scrreprt
-
+    navigation:
+      type: default
+  #pdf:
+    #documentclass: scrreprt
+   
+ 
 editor: visual
 

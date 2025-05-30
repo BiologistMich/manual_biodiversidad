@@ -4,10 +4,10 @@ author: "Biol. Michell Romero"
 date: "2025/05/29"
 ---
 
-# Introducción
+Introducción
 
 El análisis de diversidad estructural de las comunidades durante mucho tiempo se ha implementado generalmente mediante el uso de índices tradicionales cuantitativos como el índice de diversidad de Shannon, dominancia de Simpson y equidad de Pielou.
 
 Estos índices, resultan en un valor numérico cuya unidad de medida son los "bits" p. ej. en H'
 
-
+system("quarto render --no-cache --verbose")
