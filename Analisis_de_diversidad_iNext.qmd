@@ -1,13 +1,45 @@
 ---
-title: "Analisis de diversidad iNext"
+title: "Analisis de diversidad Verdadera con iNext"
 author: "Biol. Michell Romero"
 date: "2025/05/29"
+toc: true
+toc-location: right
+toc-title: "Contenido"
 ---
 
-Introducción
+# Introducción {.unnumbered}
 
 El análisis de diversidad estructural de las comunidades durante mucho tiempo se ha implementado generalmente mediante el uso de índices tradicionales cuantitativos como el índice de diversidad de Shannon, dominancia de Simpson y equidad de Pielou.
 
-Estos índices, resultan en un valor numérico cuya unidad de medida son los "bits" p. ej. en H'
+Estos índices, miden sólo un componente de la diversidad, y resultan en un valor numérico cuya unidad de medida son los "bits" p. ej. en H', el cual carece de interpretación ecológica, es abstracta y dificil de comparar pues sólo es un valor de referencia.
 
-system("quarto render --no-cache --verbose")
+En contraste, el análisis de *diversidad verdadera* mediante los números de HIll **(Hill, 1973)** es el método más reciente y aceptado para medir la diversidad. Ya que su unidad de medida es el *número efectivo de especies* y que es considerada cuando cada especie es ponderada por su abundancia relativa por lo que es recomendado como una medida que conserva propiedades más intuitivas y permite una interpretación más unificada de la diversidad de especies **(Cultid-Medina y Escobar, 2019).**
+
+# Ejemplo de análisis de diversidad con índices tradicionales {.unnumbered}
+
+El análisis de diversidad como mencionábamos, se realiza de convencinalmente con ciertos índices tradicionales. Para esto, se puede utilizar el paquete **vegan** en R. Para esto es necesario tener una base de datos con sitios o muestras en filas y las especies en columnas, con sus respectivas abundancias.
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, eval=TRUE}
+library(rio)
+
+datos <- data.frame(BUTJAM=c(1,0,2,5,8), 
+                    PASCIR=c(2,0,0,0,5), 
+                    BUBVIR=c(0,0,0,0,1),
+                    AMPBIL=c(2,5,3,2,4))
+rownames(datos) <- c("PC1", "PC2", "PC3", "PC4", "PC5")
+
+```
+
+
+
+```{r tabla ejemplo, echo=FALSE, warning=FALSE, message=FALSE}
+library(DT)
+datatable(datos, 
+          options = list(pageLength = 5,
+                         scrollX=TRUE), 
+          caption = 'Matriz de abundancias')
+```
+
+
+quarto_render()
+

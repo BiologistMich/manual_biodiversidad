@@ -5,6 +5,7 @@ book:
   title: "Manual de procedimientos para el análisis de biodiversidad"
   author: "Biol. Michell Ivann Romero Pacheco"
   date: "2025/05/29"
+  cover-image: cover.png
   chapters:
     - index.qmd
     - Analisis_de_diversidad_iNext.qmd
@@ -19,6 +20,12 @@ format:
       - brand
     navigation:
       type: default
+      format:
+    highlight-style: dracula
+    code-link: true
+    code-fold: true
+    self-contained: true
+    
   #pdf:
     #documentclass: scrreprt
    
